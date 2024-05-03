@@ -1,0 +1,51 @@
+{
+    "name": "dcat/laravel-admin",
+    "description": "dcat admin",
+    "type": "library",
+    "keywords": ["laravel", "admin", "grid", "form", "laravel admin"],
+    "homepage": "https://github.com/JacobDev291/dcat-admin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jqh",
+            "email": "841324345@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laravel/framework": "~10.0|~11.0",
+        "spatie/eloquent-sortable": "^4.3.0",
+        "doctrine/dbal": "^4.0.2"
+    },
+    "require-dev": {
+        "laravel/dusk": "^8.2.0",
+        "phpstan/phpstan": "^1.10.67",
+        "phpunit/phpunit": "^11.0.1",
+        "fakerphp/faker": "^1.23",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dcat\\Admin\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\AdminServiceProvider"
+            ]
+        }
+    }
+}
