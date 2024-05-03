@@ -1,6 +1,6 @@
 {
-    "name": "dcat/laravel-admin",
-    "description": "dcat admin",
+    "name": "mine/laravel-admin",
+    "description": "mine admin",
     "type": "library",
     "keywords": ["laravel", "admin", "grid", "form", "laravel admin"],
     "homepage": "https://github.com/JacobDev291/dcat-admin",
