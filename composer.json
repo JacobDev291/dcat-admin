@@ -1,6 +1,6 @@
 {
-    "name": "mine/laravel-admin",
-    "description": "mine admin",
+    "name": "dcat/laravel-admin",
+    "description": "dcat admin",
     "type": "library",
     "keywords": ["laravel", "admin", "grid", "form", "laravel admin"],
     "homepage": "https://github.com/JacobDev291/dcat-admin",
@@ -31,11 +31,6 @@
         "files": [
             "src/Support/helpers.php"
         ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Dcat\\Admin\\Tests\\": "tests/"
-        }
     },
     "scripts": {
         "phpstan": "vendor/bin/phpstan analyse",
